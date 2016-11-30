@@ -5,7 +5,7 @@
 
 <dl class="dl-horizontal">  
   <dt></dt>    
-  <dd><%= image_tag(@image.picture.url, size: "200x150") if @image.picture? %>:</dd>
+  <dd><%= image_tag(@image.picture.url, size: "500x500") if @image.picture? %>:</dd>
   <dd><strong><%= model_class.human_attribute_name(:name) %>:  <%= @image.name %></strong></dd>   
 </dl>
 <%= link_to t('.back', :default => t("helpers.links.back")),
